@@ -5,6 +5,7 @@ import { INITIAL_APPOINTMENTS, MOCK_SERVICES, MOCK_PROFESSIONALS } from './const
 import Dashboard from './components/Dashboard';
 import BookingForm from './components/BookingForm';
 import AIChatAssistant from './components/AIChatAssistant';
+import LogoImg from './logo/Logo AgendAI.png';
 
 const App: React.FC = () => {
   const [view, setView] = useState<ViewType>('client');
@@ -30,10 +31,8 @@ const App: React.FC = () => {
       {/* Navigation */}
       <nav className="bg-white border-b border-gray-200 sticky top-0 z-40 px-6 py-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x-3 cursor-pointer group">
-            <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-indigo-200 group-hover:rotate-12 transition">
-              <i className="fas fa-calendar-alt text-xl"></i>
-            </div>
+            <div className="flex items-center space-x-3 cursor-pointer group">
+            <img src={LogoImg} alt="AgendAI" className="w-10 h-10 rounded-xl object-cover shadow-lg shadow-indigo-200 group-hover:rotate-12 transition" />
             <div>
               <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600">
                 AgendAI
