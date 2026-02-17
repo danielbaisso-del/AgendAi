@@ -5,7 +5,7 @@ import { INITIAL_APPOINTMENTS, MOCK_SERVICES, MOCK_PROFESSIONALS } from './const
 import Dashboard from './components/Dashboard';
 import BookingForm from './components/BookingForm';
 import AIChatAssistant from './components/AIChatAssistant';
-import LogoImg from './logo/Logo AgendAI.png';
+import LogoImg from './Logo/Logo AgendAI.png';
 
 const App: React.FC = () => {
   const [view, setView] = useState<ViewType>('client');
